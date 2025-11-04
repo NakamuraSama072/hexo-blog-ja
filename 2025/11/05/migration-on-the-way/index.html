@@ -1,0 +1,323 @@
+<!DOCTYPE html><html lang="ja" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>このサイトがHaloへ移行する旨のお知らせ | NakamuraSama072's Blog</title><meta name="author" content="NakamuraSama072"><meta name="copyright" content="NakamuraSama072"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="このサイトがHaloへ移行する旨のお知らせ">
+<meta property="og:type" content="article">
+<meta property="og:title" content="このサイトがHaloへ移行する旨のお知らせ">
+<meta property="og:url" content="https://jablogs.nakamurasama072.com/2025/11/05/migration-on-the-way/index.html">
+<meta property="og:site_name" content="NakamuraSama072&#39;s Blog">
+<meta property="og:description" content="このサイトがHaloへ移行する旨のお知らせ">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://www.rankwatch.com/blog/wp-content/uploads/2023/11/website_migration_banner.png">
+<meta property="article:published_time" content="2025-11-04T23:45:56.000Z">
+<meta property="article:modified_time" content="2025-11-04T16:42:01.747Z">
+<meta property="article:author" content="NakamuraSama072">
+<meta property="article:tag" content="changelog">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.rankwatch.com/blog/wp-content/uploads/2023/11/website_migration_banner.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "このサイトがHaloへ移行する旨のお知らせ",
+  "url": "https://jablogs.nakamurasama072.com/2025/11/05/migration-on-the-way/",
+  "image": "https://www.rankwatch.com/blog/wp-content/uploads/2023/11/website_migration_banner.png",
+  "datePublished": "2025-11-04T23:45:56.000Z",
+  "dateModified": "2025-11-04T16:42:01.747Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "NakamuraSama072",
+      "url": "https://jablogs.nakamurasama072.com"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/winter-50x50.png"><link rel="canonical" href="https://jablogs.nakamurasama072.com/2025/11/05/migration-on-the-way/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.json","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"${query} の検索結果が見つかりませんでした。","hits_stats":"${hits} 件の記事が見つかりました"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: 'コピー成功',
+    error: 'コピー失敗',
+    noSupport: 'ブラウザが対応していません'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'たった今',
+    min: '分前',
+    hour: '時間前',
+    day: '日前',
+    month: 'ヶ月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'もっと見る'
+  },
+  isPhotoFigcaption: true,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'このサイトがHaloへ移行する旨のお知らせ',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">記事</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">タグ</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">カテゴリ</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> ホームページ</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> アーカイブ</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> タグ</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-language"></i><span> 言語</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://enblogs.nakamurasama072.com"><span> 英語</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://blogs.nakamurasama072.com"><span> 中国語</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友達</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-circle-info"></i><span> 概要</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://www.rankwatch.com/blog/wp-content/uploads/2023/11/website_migration_banner.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/img/winter-50x50.png" alt="Logo"><span class="site-name">NakamuraSama072's Blog</span></a><a class="nav-page-title" href="/"><span class="site-name">このサイトがHaloへ移行する旨のお知らせ</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  ホームに戻る</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 検索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> ホームページ</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> アーカイブ</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> タグ</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-language"></i><span> 言語</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://enblogs.nakamurasama072.com"><span> 英語</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://blogs.nakamurasama072.com"><span> 中国語</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友達</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-circle-info"></i><span> 概要</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">このサイトがHaloへ移行する旨のお知らせ</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">作成日</span><time class="post-meta-date-created" datetime="2025-11-04T23:45:56.000Z" title="作成日 2025-11-05 08:45:56">2025-11-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新日</span><time class="post-meta-date-updated" datetime="2025-11-04T16:42:01.747Z" title="更新日 2025-11-05 01:42:01">2025-11-05</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/changelog/">changelog</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">総文字数:</span><span class="word-count">356</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">読む時間:</span><span>1分</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>いつも当ブログをご愛読いただき、誠にありがとうございます。<br>より安定し、高速な閲覧体験を提供するため、そして私自身の技術的・時間的な都合も考慮し、<br>本サイトのフレームワークを現在の <strong>Hexo</strong> から <strong>Halo</strong> へと移行する予定です。</p>
+<hr>
+<h2 id="移行の主な理由"><a href="#移行の主な理由" class="headerlink" title="移行の主な理由"></a>移行の主な理由</h2><h3 id="1-より充実した機能と管理体験を求めて"><a href="#1-より充実した機能と管理体験を求めて" class="headerlink" title="1. より充実した機能と管理体験を求めて"></a>1. より充実した機能と管理体験を求めて</h3><p>Hexo は静的ブログとして非常に軽量で優れていますが、コンテンツ管理やインタラクション機能の面では制約があります。<br>一方、Halo は強力な管理画面を備えており、より直感的なコンテンツ編集や多言語管理をサポートしています。<br>これにより、私はより創作そのものに集中できるようになります。</p>
+<h3 id="2-サイト性能のさらなる向上"><a href="#2-サイト性能のさらなる向上" class="headerlink" title="2. サイト性能のさらなる向上"></a>2. サイト性能のさらなる向上</h3><p>Halo はモダンな動的ブログシステムとして、高速な応答性を保ちつつ、Hexo よりも豊富な標準機能を提供します。<br>これにより、今後の機能拡張にも柔軟に対応できる基盤を整えることができます。</p>
+<hr>
+<h2 id="「なぜ他のフレームワークではないのか？」"><a href="#「なぜ他のフレームワークではないのか？」" class="headerlink" title="「なぜ他のフレームワークではないのか？」"></a>「なぜ他のフレームワークではないのか？」</h2><h3 id="1-技術スタックと運用方針の整理"><a href="#1-技術スタックと運用方針の整理" class="headerlink" title="1. 技術スタックと運用方針の整理"></a>1. 技術スタックと運用方針の整理</h3><p>以前公開した changelog でも触れましたが、英語版サイトでは <strong>WordPress</strong> を採用しており、現在移行作業を進めています。<br>技術スタックや運用方式の重複を避けるため、<br>日本語（および中国語）サイトでは、よりシンプルで軽量な新しいアプローチを試みたいと考えています。</p>
+<h3 id="2-Astro-について"><a href="#2-Astro-について" class="headerlink" title="2. Astro について"></a>2. Astro について</h3><p>Astro は確かに高いパフォーマンスを誇る優れたフレームワークです。<br>しかし、開発には相応のフロントエンド知識と工数が求められます。<br>私のように主に C&#x2F;C++ を扱う開発者にとっては、ややハードルが高いのが現状です。<br>そのため、Hexo 時代のように複雑な構築・保守作業に時間を取られるよりも、<br>創作活動そのものに集中できる環境を整えたいと考えています。</p>
+<hr>
+<h2 id="今後について"><a href="#今後について" class="headerlink" title="今後について"></a>今後について</h2><p>移行期間中は、一時的にサイトへアクセスしづらい状況が発生する可能性があります。<br>ご不便をおかけいたしますが、何卒ご理解のほどよろしくお願いいたします。  </p>
+<p>新しいサイトでは、これまでのコンテンツやリンクの大部分を引き継ぎ、<br>changelog は専用のアーカイブページとしてまとめる予定です。<br>より快適でスムーズな閲覧体験をお届けできるよう努めてまいります。</p>
+<hr>
+<p>今後とも変わらぬご支援のほど、心よりお願い申し上げます。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>著者: </span><span class="post-copyright-info"><a href="https://jablogs.nakamurasama072.com">NakamuraSama072</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>リンク: </span><span class="post-copyright-info"><a href="https://jablogs.nakamurasama072.com/2025/11/05/migration-on-the-way/">https://jablogs.nakamurasama072.com/2025/11/05/migration-on-the-way/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>著作権表示: </span><span class="post-copyright-info">このブログのすべての記事は、<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> ライセンスの下で提供されており、特に明記されていない限り、すべての権利を留保します。転載時には出典を明記してください: <a href="https://jablogs.nakamurasama072.com">NakamuraSama072's Blog</a>。</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/changelog/">changelog</a></div><div class="post-share"><div class="addtoany"><div class="a2a_kit a2a_kit_size_32 a2a_default_style"><a class="a2a_button_facebook"></a><a class="a2a_button_x"></a><a class="a2a_button_line"></a><a class="a2a_button_email"></a><a class="a2a_button_copy_link"></a><a class="a2a_dd" target="_blank" rel="noopener" href="https://www.addtoany.com/share"></a></div></div><script async="async" src="https://static.addtoany.com/menu/page.js"></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2025/09/23/changelog3/" title="changelog3"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">前へ</div><div class="info-item-2">changelog3</div></div><div class="info-2"><div class="info-item-1">3.0 バージョン Changelog</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>関連記事</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2025/08/09/first-blog/" title="2025-8-9 v1.0 Changelog"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="fas fa-history fa-fw"></i> 2025-08-19</div><div class="info-item-2">2025-8-9 v1.0 Changelog</div></div><div class="info-2"><div class="info-item-1">1.0 バージョン Changelog</div></div></div></a><a class="pagination-related" href="/2025/09/23/changelog3/" title="changelog3"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="fas fa-history fa-fw"></i> 2025-11-05</div><div class="info-item-2">changelog3</div></div><div class="info-2"><div class="info-item-1">3.0 バージョン Changelog</div></div></div></a><a class="pagination-related" href="/2025/08/18/changelog2/" title="2025-8-18 v2.0 Changelog"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="fas fa-history fa-fw"></i> 2025-09-23</div><div class="info-item-2">2025-8-18 v2.0 Changelog</div></div><div class="info-2"><div class="info-item-1">2.0 バージョン Changelog</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> コメント</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">NakamuraSama072</div><div class="author-info-description">A Linux enthusiast and C/C++ programmer.</div><div class="site-data"><a href="/archives/"><div class="headline">記事</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">タグ</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">カテゴリ</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/NakamuraSama072"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/NakamuraSama072" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://space.bilibili.com/3494374969183105" target="_blank" title="Bilibili"><i class="fab fa-bilibili" style="color: #00a1d6;"></i></a><a class="social-icon" href="mailto:kamidenyichiyan@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>お知らせ</span></div><div class="announcement_content">このサイトはまもなくHaloへ移行します。移行期間中はアクセスできない場合がありますのでご注意ください。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目次</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A7%BB%E8%A1%8C%E3%81%AE%E4%B8%BB%E3%81%AA%E7%90%86%E7%94%B1"><span class="toc-number">1.</span> <span class="toc-text">移行の主な理由</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E3%82%88%E3%82%8A%E5%85%85%E5%AE%9F%E3%81%97%E3%81%9F%E6%A9%9F%E8%83%BD%E3%81%A8%E7%AE%A1%E7%90%86%E4%BD%93%E9%A8%93%E3%82%92%E6%B1%82%E3%82%81%E3%81%A6"><span class="toc-number">1.1.</span> <span class="toc-text">1. より充実した機能と管理体験を求めて</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E3%82%B5%E3%82%A4%E3%83%88%E6%80%A7%E8%83%BD%E3%81%AE%E3%81%95%E3%82%89%E3%81%AA%E3%82%8B%E5%90%91%E4%B8%8A"><span class="toc-number">1.2.</span> <span class="toc-text">2. サイト性能のさらなる向上</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E3%80%8C%E3%81%AA%E3%81%9C%E4%BB%96%E3%81%AE%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%A7%E3%81%AF%E3%81%AA%E3%81%84%E3%81%AE%E3%81%8B%EF%BC%9F%E3%80%8D"><span class="toc-number">2.</span> <span class="toc-text">「なぜ他のフレームワークではないのか？」</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%8A%80%E8%A1%93%E3%82%B9%E3%82%BF%E3%83%83%E3%82%AF%E3%81%A8%E9%81%8B%E7%94%A8%E6%96%B9%E9%87%9D%E3%81%AE%E6%95%B4%E7%90%86"><span class="toc-number">2.1.</span> <span class="toc-text">1. 技術スタックと運用方針の整理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Astro-%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"><span class="toc-number">2.2.</span> <span class="toc-text">2. Astro について</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8A%E5%BE%8C%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"><span class="toc-number">3.</span> <span class="toc-text">今後について</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最近の記事</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/11/05/migration-on-the-way/" title="このサイトがHaloへ移行する旨のお知らせ"><img src="https://www.rankwatch.com/blog/wp-content/uploads/2023/11/website_migration_banner.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="このサイトがHaloへ移行する旨のお知らせ"/></a><div class="content"><a class="title" href="/2025/11/05/migration-on-the-way/" title="このサイトがHaloへ移行する旨のお知らせ">このサイトがHaloへ移行する旨のお知らせ</a><time datetime="2025-11-04T23:45:56.000Z" title="作成日 2025-11-05 08:45:56">2025-11-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/09/23/changelog3/" title="changelog3">changelog3</a><time datetime="2025-09-23T00:33:24.000Z" title="作成日 2025-09-23 09:33:24">2025-09-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/09/22/gtkmm-note2-widgets-and-signals/" title="gtkmm チュートリアル（2）—— 単純なウィジェットとシグナル"><img src="https://www.linuxmi.com/wp-content/uploads/2020/12/GTK4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="gtkmm チュートリアル（2）—— 単純なウィジェットとシグナル"/></a><div class="content"><a class="title" href="/2025/09/22/gtkmm-note2-widgets-and-signals/" title="gtkmm チュートリアル（2）—— 単純なウィジェットとシグナル">gtkmm チュートリアル（2）—— 単純なウィジェットとシグナル</a><time datetime="2025-09-22T14:08:52.000Z" title="作成日 2025-09-22 23:08:52">2025-09-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/08/23/gtkmm-note1-installation/" title="gtkmm チュートリアル（1）── gtkmm のインストールと使い方"><img src="https://www.linuxmi.com/wp-content/uploads/2020/12/GTK4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="gtkmm チュートリアル（1）── gtkmm のインストールと使い方"/></a><div class="content"><a class="title" href="/2025/08/23/gtkmm-note1-installation/" title="gtkmm チュートリアル（1）── gtkmm のインストールと使い方">gtkmm チュートリアル（1）── gtkmm のインストールと使い方</a><time datetime="2025-08-23T06:00:00.000Z" title="作成日 2025-08-23 15:00:00">2025-08-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/08/18/changelog2/" title="2025-8-18 v2.0 Changelog">2025-8-18 v2.0 Changelog</a><time datetime="2025-08-17T19:48:19.000Z" title="作成日 2025-08-18 04:48:19">2025-08-18</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://www.rankwatch.com/blog/wp-content/uploads/2023/11/website_migration_banner.png);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By NakamuraSama072</span><span class="framework-info"><span>フレームワーク </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>テーマ </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.0</a></span></div><div class="footer_custom_text">NakamuraSama072's Blog - Linux, and You</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="読書モード"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="ライトモード/ダークモード切り替え"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="シングルカラムとダブルカラムの切り替え"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="設定"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目次"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="コメントへ移動"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="トップに戻る"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        loader: {
+          load: [
+            // Four font extension packages (optional)
+            //- '[tex]/bbm',
+            //- '[tex]/bboldx',
+            //- '[tex]/dsfont',
+            '[tex]/mhchem'
+          ],
+          paths: {
+            'mathjax-newcm': '[mathjax]/../@mathjax/mathjax-newcm-font',
+
+            //- // Four font extension packages (optional)
+            //- 'mathjax-bbm-extension': '[mathjax]/../@mathjax/mathjax-bbm-font-extension',
+            //- 'mathjax-bboldx-extension': '[mathjax]/../@mathjax/mathjax-bboldx-font-extension',
+            //- 'mathjax-dsfont-extension': '[mathjax]/../@mathjax/mathjax-dsfont-font-extension',
+            'mathjax-mhchem-extension': '[mathjax]/../@mathjax/mathjax-mhchem-font-extension'
+          }
+        },
+        output: {
+          font: 'mathjax-newcm',
+        },
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+          packages: {
+            '[+]': [
+              'mhchem'
+            ]
+          }
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          menuOptions: {
+            settings: {
+              enrich: false  // Turn off Braille and voice narration text automatic generation
+            }
+          },
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const createScriptElement = config => {
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => {
+      ele.setAttribute(key, value)
+    })
+    return ele
+  }
+
+  const loadGiscus = (el = document, key) => {
+    const mappingConfig = isShuoshuo
+      ? { 'data-mapping': 'specific', 'data-term': key }
+      : { 'data-mapping': (option && option['data-mapping']) || 'pathname' }
+
+    const giscusConfig = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'NakamuraSama072/hexo-blog-ja',
+      'data-repo-id': 'R_kgDOPgCAdg',
+      'data-category-id': 'DIC_kwDOPgCAds4CunPx',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      ...mappingConfig
+    }
+
+    const scriptElement = createScriptElement(giscusConfig)
+
+    el.querySelector('#giscus-wrap').appendChild(scriptElement)
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGiscus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if (isShuoshuo) {
+    'Giscus' === 'Giscus'
+      ? window.shuoshuoComment = { loadComment: loadGiscus }
+      : window.loadOtherComment = loadGiscus
+    return
+  }
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment = loadGiscus
+  }
+})()</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">検索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  データベースを読み込んでいます</span></div><div class="local-search-input"><input placeholder="記事を検索" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
